@@ -1,0 +1,18 @@
+graphql:
+  servlet:
+    mapping: /api/pd/graphql
+    enabled: true
+    corsEnabled: true
+
+graphiql:
+  mapping: /api/mt/graphiql
+  endpoint:
+    graphql: /api/pd/graphql
+    subscriptions: /api/pd/subscriptions
+  subscriptions:
+    timeout: 30
+    reconnect: false
+  enabled: true
+  pageTitle: GraphiQL Testing
+
+logging.level.root: DEBUG
